@@ -1,3 +1,4 @@
+//proyect: rock, paper scissors
 console.log("Let's start the game!!");
 // funcion para que la computadora elija aleatoriamente
 function getComputerChoice() {
