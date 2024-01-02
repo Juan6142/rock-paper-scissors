@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="test2.css">
 </head>
 <body>
+    <div class="header">
+        <h1>Rock, Paper, Scissors</h1>
+        <h2>First to score 5 points wins!</h2>
+        <h2>Choose!</h3>
+    </div>
+
+    <div class="user-selection">
+        <div><img src="/resources/images/hand-rock_1.png" alt="rock hand gesture"><p>Rock</p><button class="btn-rock" type="button">Select</button></div>
+        <div><img src="./resources/images/hand-paper_1.png" alt="paper hand gesture"><p>Paper</p><button class="btn-paper" type="button">Select</button></div>
+        <div><img src="/resources/images/hand-scissors_1.png" alt="scissors hand gesture"><p>Scissors</p><button class="btn-scissors" type="button">Select</button></div>
+    </div>
+    <div class="selected">
+    <div class="user-section"></div>  
+        <h3 class="h3-user-selection">Your selected: </h3>
+    </div>
+   
+    <div class="div-computer-selection">
+        <div id="div-img"><img class="computer-image" src="./resources/images/computer.png" alt="question mark"></div>
+        <h3 class="h3-computer-selection">Computer selection: </h3>
+    </div>
+    <div class="score">
+        <h3 class="round-winner"></h3>
+        <h3 class="current-score">Current score: </h3>
+    </div> 
+    
+    <footer class="footer"><div>© The Odin Proyect 2023</div></footer>
     <script src="test2.js"></script>
 </body>
 </html>
