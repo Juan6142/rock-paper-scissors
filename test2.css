@@ -67,8 +67,11 @@ footer {
     padding: 5px;
 }
 
-
-
+.png {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 150px;
+}
 
 .restart-btn {
     color: whitesmoke;

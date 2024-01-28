@@ -33,10 +33,20 @@ function round(playerSelection, computerSelection) {
 let pointsToWin = 5
 let playerWins = 0
 let computerWins = 0
-
+let computerImage = document.getElementById("computer-image")   
+computerImage.classList.add("png")
 function game() {
     //const playerSelection = prompt("Choose between rock, paper or scissors.")
     let computerSelection = getComputerChoice() //llamada a funcion getcomputerchoice
+    if (computerSelection === "rock") {
+        computerImage.src = "resources/images/rock-computer.png"
+        computerImage.classList.add("png")
+    } else if (computerSelection === "paper") {
+        computerImage.src = "resources/images/paper-computer.png"
+    } else if (computerSelection === "scissors") {
+        computerImage.src = "resources/images/scissors-computer.png"
+    }
+
     spanSecond.textContent = computerSelection
     let result = round(playerSelection, computerSelection); // llamada a funcion ronda
 
@@ -132,7 +142,8 @@ btnRestart.addEventListener("click", () => {
     spanFirst.textContent = ""
     spanSecond.textContent = ""
     resultSpan.style.color = 'black'
-    restart.removeChild(btnRestart) 
+    restart.removeChild(btnRestart)
+    computerImage.src = "./resources/images/computer.png"
 });
 
 // no se puede remover el evento ya que estoy usando funciones sin nombre y el metodo para elimnar
